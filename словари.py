@@ -5,6 +5,19 @@ print(dict_for_example)
 # Обращаться к ключам и значениям можно с помощью методов
 # dict.keys() и dict.values()
 
+d = {'coding': 'good', 'thinking': 'better'}
+print(d.get('coding'))
+# 'good' returned
+
+d = {1: '001', 2: '010', 3: '011'}
+print(d.get(4, "Not found"))
+# since 4 is not in keys, it'll print "Not found"
+
+dict_2 = {0: 'name', 1: 'surname', 2: 'address'}
+print(dict_2.setdefault(3, 'gender'))
+print(dict_2)
+# setdefault works like append() method in lists and add key with value to our dictionary
+
 # Проверка наличия значения в словаре с помощью ключа
 'Five hundred and eleven' in dict_for_example
 print(True or False)
